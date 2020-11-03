@@ -1,7 +1,7 @@
-let english = ["nested","another","indented","inside","outside","place","second","first","third","destination","into","own","existing","employee","describing","character","highlighted","remove","missing","would","those","below","underneath","nest","called","unordered","bulleted","item","stand","between","just","useful","spot","point","assemble","snippet","contain","more","also","give","even","such","simple","empty","same","way","them","does","will","bullet","before","put","sign","right","which","goes","appear"];
+let english = ["nested","another","indented","inside","outside","place","second","first","third","destination","into","own","existing","employee","describing","character","highlighted","remove","missing","would","those","below","underneath","nest","called","unordered","bulleted","item","stand","between","just","useful","spot","point","assemble","snippet","contain","more","also","give","even","such","simple","empty","same","way","them","does","will","bullet","before","put","sign","right","which","goes","appear","want","know","highest","learn","so","far","access","usually","keep","lowercase","hyphen","each","typically","visible","most","common","given","take","takes","quotes","happens","multiple","space","instead","fine","both","value","lead","linking","broken"];
 let randomNumber;
 let answerIsCorrect;
-let ukraine = ["вкладений","iнший","з відступом","всередині","зовні","місце","другий","перший","третій","пункт призначання","в","власний","існуючі","працівник","описуючи","характер","виділено","видалити","відсутній","би","ті","нижче","нижче","гніздо","званий","невпорядкований","маркований","пункт","стояти","між","просто","корисний","місце\n пляма","точка","зібрати\n збирати","фрагмент","містять\n містити","більше","також","дати","навіть","такі","простий","порожній\n спорожнити","те саме\n то ж","шлях","їх","робить","буде","куля","раніше\nперед тим","поставити\nставити","знак","правильно\nправо","який\nкотрий","йде","з'являються\nз'явиться"];
+let ukraine = ["вкладений","iнший","з відступом","всередині","зовні","місце","другий","перший","третій","пункт призначання","в","власний","існуючі","працівник","описуючи","характер","виділено","видалити","відсутній","би","ті","нижче","нижче","гніздо","званий","невпорядкований","маркований","пункт","стояти","між","просто","корисний","місце\nпляма","точка","зібрати\nзбирати","фрагмент","містять\nмістити","більше","також","дати","навіть","такі","простий","порожній\nспорожнити","те саме\nто ж","шлях","їх","робить","буде","куля","раніше\nперед тим","поставити\nставити","знак","правильно\nправо","який\nкотрий","йде","з'являються\nз'явиться","хочуть\nхотіти","знати","найвищий","вчитися","тому\nтак\nотже","далеко","доступ","зазвичай","тримати","мала літера","дефіс","кожен","типово","видно\nвидимий","більшість\nнайбільш","загальний","дано","приймати\nбрати\nвзяти","бере\nприймає","лапки","трапляється\nвідбувається","множинні\nмножинний","простору\nпростір","замість","чудово","обидва","значення","вести","зв'язування\nзшивання","зламаний\nзламані"];
 
 let onEnglish = confirm("Запитувати на англійській мові?");
 console.log(`${english.length}\n${ukraine.length}`);
@@ -10,7 +10,7 @@ if (onEnglish) {
 } else {
   askInUkraine();
 }
-alert("Вітаємо, ви вивчили всі слова!\nСongratulations, you have learned all the words!")
+alert("Вітаємо, ви вивчили всі слова!\nСongratulations, you have learned all the words!");
 
 function askInEnglish() {
   while (english.length > 0) {
