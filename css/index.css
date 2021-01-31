@@ -14,7 +14,8 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px 1fr;
-    height: 300px;
+    min-height: 300px;
+    height: 100%;
 }
 
 .text {
@@ -23,7 +24,7 @@ p {
     grid-column: 1/-1;
 }
 
-.askLanguageButtons {
+button {
     max-height: 30px;
     background-color: black;
     color: white;
@@ -33,11 +34,11 @@ p {
     margin: 15px;
 }
 
-.askLanguageButtons:focus {
+button:focus {
     outline: none;
 }
 
-.askLanguageButtons:hover {
+button:hover {
     background-color: white;
     color: black;
     border-color: black;
@@ -109,4 +110,8 @@ p {
     10%,30%,50%,70%,90%{transform: rotate(5deg);}
     20%,40%,60%,80%{transform: rotate(-5deg);}
     0%,100%{transform: rotate(0deg);}
+}
+
+.results {
+    width: 90%;
 }
