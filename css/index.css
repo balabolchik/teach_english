@@ -92,6 +92,7 @@ button:hover {
 }
 
 .bad {
+    color: red;
     animation: anim1 1s linear 0s infinite;
 }
 

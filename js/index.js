@@ -38,8 +38,11 @@ for (let i = 0; i < words.english.length; i++) {
         wordss.numbers.push(i);
     }
 }
-debugger
-ask();
+if (words.english.length===words.ukraine.length) {
+    ask();
+} else {
+    root.innerHTML = `<h1 class="bad">Error</h1>`;
+}
 
 const f1 = () => {
     document.getElementById("root2").innerHTML = `
