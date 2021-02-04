@@ -38,6 +38,7 @@ for (let i = 0; i < words.english.length; i++) {
         wordss.numbers.push(i);
     }
 }
+debugger
 ask();
 
 const f1 = () => {
