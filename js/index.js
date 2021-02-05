@@ -1,3 +1,4 @@
+let counter = 0;
 const addNewScore = () => {
     for (let i = 0; i < words.score.length; i++) {
         debugger
@@ -39,6 +40,8 @@ for (let i = 0; i < words.english.length; i++) {
         wordss.english.push(words.english[i]);
         wordss.ukraine.push(words.ukraine[i]);
         wordss.numbers.push(i);
+    } else {
+        counter++;
     }
 }
 if (words.english.length===words.ukraine.length) {
@@ -75,6 +78,7 @@ function onUkraine () {
     <div class="pressWord">
         <input id="input" type="text" placeholder="Your word" value="" value="${words.yourTranslate}"></input>
         <p>${wordss.english.length}</p>
+        <p>Learned ${counter} words</p>
     </div>
     <div class="image"></div>
     `
@@ -107,6 +111,12 @@ function onKeyUpUa (e) {
             wordss.english.splice(randomNumber, 1);
             wordss.ukraine.splice(randomNumber, 1);
             wordss.numbers.splice(randomNumber, 1);
+            counter = 0;
+            for (let i = 0; i < words.score.length; i++) {
+                if (words.score[i] >= limitScore) {
+                    counter++;
+                }
+            }
             if (wordss.english.length===0) {
                 root.innerHTML = `
                     <button onclick="f1()">Let results</button>
@@ -140,6 +150,7 @@ function onEnglish () {
     <div class="pressWord">
         <input id="input" type="text" placeholder="Your word" value="" value="${words.yourTranslate}"></input>
         <p>${wordss.english.length}</p>
+        <p>Learned ${counter} words</p>
     </div>
     <div class="image"></div>
     `
@@ -171,6 +182,12 @@ function onKeyUpEn (e) {
             wordss.english.splice(randomNumber, 1);
             wordss.ukraine.splice(randomNumber, 1);
             wordss.numbers.splice(randomNumber, 1);
+            counter = 0;
+            for (let i = 0; i < words.score.length; i++) {
+                if (words.score[i] >= limitScore) {
+                    counter++;
+                }
+            }
             if (wordss.english.length===0) {
                 root.innerHTML = `
                     <button onclick="f1()">Let results</button>
